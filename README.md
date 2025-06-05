@@ -7,16 +7,16 @@ A basic end-to-end search engine pipeline built from scratch using Python. This 
 ## 🚧 Project Structure
 
 1. **Crawler**  
-   Crawls web pages, follows links, and stores raw HTML content.
+   Crawls web pages, follows links, and gets raw HTML content for outgoing links. (Did not consider robots.txt, will implement that soon)
 
 2. **Indexer**  
-   Parses HTML content, tokenizes, and builds an inverted index using TF-IDF.
+   Fetches fresh HTML content, tokenizes, and builds an inverted index using TF-IDF.
 
 3. **Searcher**  
    Retrieves relevant documents from the index based on user queries.
 
 4. **Browser Interface (React Native)**  
-   Wraps the functionality in a mobile-friendly UI for searching and viewing results.
+   Wraps the functionality in a mobile-friendly UI for searching and viewing results. (To be added)
 
 ---
 
