@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from pymongo import MongoClient
-import time
 
 # MongoDB setup
 client = MongoClient("mongodb://localhost:27017/")
@@ -24,7 +23,7 @@ def htmlParserToGetHrefs(html, base_url):
     return absolute_links
 
 # Init
-seed = "https://www.nytimes.com/" # also https://www.bbc.com/
+seed = "https://bangalore.craigslist.org/" # also https://www.bbc.com/
 queue = [seed]
 visited = set()
 inout_map = dict()  # {link: [in, out]} to find inbound and outgoing links
